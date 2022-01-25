@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 224);
+    color: #333;
+}
+
+body{
+    height: 100vh;
+    margin: 0 5%;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    height: 6vh;
+    padding-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    grid-template-rows: 10vh 1fr;
+}
+
+h2{
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    font-size: 2rem;
+}
+
+
+section{
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 24% 24% 50%;
+    grid-template-rows: 20% 35% 1fr;
+    column-gap: 13px;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+.shatteringCookware{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.microwave{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.knifeCuts{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.cookingFires{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.contactBurns{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.deathPathogens{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.picContainer{
+    grid-column: 3;
+    grid-row: 1/5;
+}
+
+.picContainer img{
+    height: 71vh;
+    width: 100%;
+}
+
+aside{
+    margin-left: 10%;
+    grid-column: 4;
+    grid-row: 1/5;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6vh 25vh 25vh 25vh;
+    row-gap: 15px;
+}
+
+.sideHeadline{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 1.3rem;
+}
+
+.anzeige1{
+    border: 5px double black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.anzeige2{
+    border: 5px double;
+    text-align: center;
+    padding: 1.7em;
+    line-height: 20px;
+}
+
+.anzeige2 h2{
+    font-size: 1.3rem;
+}
+
+.anzeige2 span{
+    color: gray;
+    font-size: 1.2rem;
+    border-bottom: 2px solid gray;
+}
+
+
+aside img{
+    border: 5px double black;
+    padding: 20px;
+    width: 100%;
+    
+}
